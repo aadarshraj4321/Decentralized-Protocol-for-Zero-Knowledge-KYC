@@ -1,0 +1,24 @@
+services:
+  backend-api:
+    container_name: zkkc_api
+    build:
+      context: ./backend-api
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend-api:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env # Assuming root .env for this one
+    
+  verifier-svc:
+    container_name: zkkc_verifier
+    build:
+      context: ./verifier-svc
+      dockerfile: Dockerfile
+    volumes:
+      - ./verifier-svc:/app
+    ports:
+      - "8081:8081"
+    env_file:
+      - ./verifier-svc/.env
