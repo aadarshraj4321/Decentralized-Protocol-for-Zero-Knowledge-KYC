@@ -1,5 +1,5 @@
 # Zero-Knowledge-KYC Engine: A Privacy-Preserving Identity Verification Service
-    This project is a fully functional prototype of a Zero-Knowledge Know-Your-Customer (ZK-KYC) service, built as a SaaS platform. It allows digital services like fintechs and crypto exchanges to verify user attributes (e.g., "is over 18") without ever accessing the user's sensitive personal identifying information (PII).
+This project is a fully functional prototype of a Zero-Knowledge Know-Your-Customer (ZK-KYC) service, built as a SaaS platform. It allows digital services like fintechs and crypto exchanges to verify user attributes (e.g., "is over 18") without ever accessing the user's sensitive personal identifying information (PII).
 
 ## Table of Contents
     The Problem: The Paradox of Digital Identity
@@ -21,22 +21,30 @@
     Configuration
     Running the Project
     Future Roadmap
-The Problem: The Paradox of Digital Identity
-In the modern digital economy, identity verification (KYC/AML) is a legal and operational necessity for countless services. However, the current model is fundamentally flawed:
+
+### The Problem: The Paradox of Digital Identity
+* In the modern digital economy, identity verification (KYC/AML) is a legal and operational necessity for countless services. However, the current model is fundamentally flawed:
 Massive Privacy Leaks: Users are forced to upload sensitive documents (passports, government IDs) to numerous services. This creates centralized "honeypots" of personal data that are prime targets for hackers. A single data breach can expose the PII of millions.
-Compliance Burden: Companies become custodians of toxic data assets. Storing and securing PII is expensive and carries significant legal and financial risks under regulations like GDPR, CCPA, and India's DPDP Act.
-Poor User Experience: Users must repeat the same tedious and intrusive KYC process for every new service they wish to use.
-This creates a paradox: to participate in the digital world, users must surrender their privacy, and to comply with the law, companies must assume enormous risk.
-Our Solution: Privacy by Design
-This ZK-KYC Engine resolves the paradox by decoupling verification from data exposure. Our service acts as a cryptographic intermediary that brokers trust, providing definitive "Yes/No" answers to policy questions without ever seeing the underlying data.
-When a fintech asks, "Is this user a resident of the USA?", our engine facilitates a process where the user generates a cryptographic proof of this fact. The fintech receives a verifiable "Yes" or "No", but never learns the user's actual address.
-Key Differentiators
-This project is distinct from standard full-stack applications in several key areas:
-Privacy Preservation: The core value proposition is privacy. Unlike other identity solutions, our service is architecturally incapable of seeing or storing user PII during the verification process.
+
+* Compliance Burden: Companies become custodians of toxic data assets. Storing and securing PII is expensive and carries significant legal and financial risks under regulations like GDPR, CCPA, and India's DPDP Act.
+
+* Poor User Experience: Users must repeat the same tedious and intrusive KYC process for every new service they wish to use.
+
+* This creates a paradox: to participate in the digital world, users must surrender their privacy, and to comply with the law, companies must assume enormous risk.
+
+* Our Solution: Privacy by Design
+This Zero-Knowledge-KYC Engine resolves the paradox by decoupling verification from data exposure. Our service acts as a cryptographic intermediary that brokers trust, providing definitive "Yes/No" answers to policy questions without ever seeing the underlying data.
+
+* When a company asks, "Is this user a resident of the USA?", our engine facilitates a process where the user generates a cryptographic proof of this fact. The fintech receives a verifiable "Yes" or "No", but never learns the user's actual address.
+
+* Key Differentiators
+* This project is distinct from standard full-stack applications in several key areas:
+* Privacy Preservation: The core value proposition is privacy. Unlike other identity solutions, our service is architecturally incapable of seeing or storing user PII during the verification process.
 User Control & Self-Sovereign Identity (SSI): The user holds their own data (in the form of a Verifiable Credential) and generates the proof on their own device (client-side). They have ultimate control over when and how their identity is used.
-Trustless Verification Layer: By integrating an on-chain verifier, we offer an optional, ultimate source of truth. A verification can be confirmed on a public blockchain, creating a permanent, tamper-proof, and publicly auditable record that does not depend on trusting our service.
-Advanced Technical Architecture: It employs a sophisticated microservice architecture, combining multiple languages (Python, Go/Node.js) and technologies (Docker, ZK-SNARKs, Blockchain) chosen specifically for their suitability to the task at hand.
+* Trustless Verification Layer: By integrating an on-chain verifier, we offer an optional, ultimate source of truth. A verification can be confirmed on a public blockchain, creating a permanent, tamper-proof, and publicly auditable record that does not depend on trusting our service.
+* Advanced Technical Architecture: It employs a sophisticated microservice architecture, combining multiple languages (Python, Go/Node.js) and technologies (Docker, ZK-SNARKs, Blockchain) chosen specifically for their suitability to the task at hand.
 System Architecture
+
 The system is designed as a distributed, multi-service application to ensure scalability, separation of concerns, and resilience.
 Architectural Diagram
 Generated code
