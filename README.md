@@ -1,25 +1,26 @@
-ZK-KYC Engine: A Privacy-Preserving Identity Verification Service
-This project is a fully functional prototype of a Zero-Knowledge Know-Your-Customer (ZK-KYC) service, built as a SaaS platform. It allows digital services like fintechs and crypto exchanges to verify user attributes (e.g., "is over 18") without ever accessing the user's sensitive personal identifying information (PII).
-Table of Contents
-The Problem: The Paradox of Digital Identity
-Our Solution: Privacy by Design
-Key Differentiators
-System Architecture
-Architectural Diagram
-Core Principles & Microservices
-Technology Stack
-Why This Stack?
-The Zero-Knowledge Core
-The Mathematics: zk-SNARKs
-The Tools: Circom & SnarkJS
-The Blockchain Layer: Trustless Verification
-End-to-End Workflow
-Getting Started
-Prerequisites
-Cloning the Repository
-Configuration
-Running the Project
-Future Roadmap
+# Zero-Knowledge-KYC Engine: A Privacy-Preserving Identity Verification Service
+    This project is a fully functional prototype of a Zero-Knowledge Know-Your-Customer (ZK-KYC) service, built as a SaaS platform. It allows digital services like fintechs and crypto exchanges to verify user attributes (e.g., "is over 18") without ever accessing the user's sensitive personal identifying information (PII).
+
+## Table of Contents
+    The Problem: The Paradox of Digital Identity
+    Our Solution: Privacy by Design
+    Key Differentiators
+    System Architecture
+    Architectural Diagram
+    Core Principles & Microservices
+    Technology Stack
+    Why This Stack?
+    The Zero-Knowledge Core
+    The Mathematics: zk-SNARKs
+    The Tools: Circom & SnarkJS
+    The Blockchain Layer: Trustless Verification
+    End-to-End Workflow
+    Getting Started
+    Prerequisites
+    Cloning the Repository
+    Configuration
+    Running the Project
+    Future Roadmap
 The Problem: The Paradox of Digital Identity
 In the modern digital economy, identity verification (KYC/AML) is a legal and operational necessity for countless services. However, the current model is fundamentally flawed:
 Massive Privacy Leaks: Users are forced to upload sensitive documents (passports, government IDs) to numerous services. This creates centralized "honeypots" of personal data that are prime targets for hackers. A single data breach can expose the PII of millions.
