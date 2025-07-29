@@ -140,7 +140,6 @@ Result: The Verifier sees the updated status and the Etherscan link in their das
     Git: For cloning the repository.
 
 * Cloning the Repository
-    Generated bash
     git clone https://github.com/aadarshraj4321/Decentralized-Protocol-for-Zero-Knowledge-KYC
     cd zk-kyc-engine
 
@@ -148,18 +147,14 @@ Result: The Verifier sees the updated status and the Etherscan link in their das
 * Configuration
     The project requires several environment variables.
     Root .env file: Create a file named .env in the project root for the Python API.
-    Generated env
     # zk-kyc-engine/.env
-    DATABASE_URL="postgresql://kycuser:kycpassword@db:5432/kycdb" # Use your Neon DB URL if not using local Postgres
-    Use code with caution.
+    DATABASE_URL="postgresql://kycuser:kycpassword@db:5432/kycdb" # use your neon db URL if not using local Postgres
     Env
     Verifier Service .env file: Create a file named .env inside the verifier-svc directory.
-    Generated env
     # zk-kyc-engine/verifier-svc/.env
     SEPOLIA_RPC_URL="https://sepolia.infura.io/v3/YOUR_INFURA_API_KEY"
     SERVER_WALLET_PRIVATE_KEY="YOUR_TESTNET_WALLET_PRIVATE_KEY"
     CONTRACT_ADDRESS="YOUR_DEPLOYED_VERIFIER_CONTRACT_ADDRESS"
-    Use code with caution.
     Env
     Running the Project
     The project must be run in three parts.
@@ -177,14 +172,10 @@ Result: The Verifier sees the updated status and the Etherscan link in their das
 
 ### Run the compilation script
     ./compile.sh # Or the relevant script name
-    Use code with caution.
-    Bash
+  
     Start Backend Services:
     Open a new terminal in the project root.
-    Generated bash
     docker-compose up --build
-    Use code with caution.
-    Bash
     Start Frontend Application:
     Open a third terminal.
 
