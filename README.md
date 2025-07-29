@@ -1,4 +1,4 @@
-# Zero-Knowledge-KYC Engine: A Privacy-Preserving Identity Verification Service
+# Decentralized Protocol for Zero-Knowledge-KYC
 This project is a fully functional prototype of a Zero-Knowledge Know-Your-Customer (ZK-KYC) service, built as a SaaS platform. It allows digital services like fintechs and crypto exchanges to verify user attributes (e.g., "is over 18") without ever accessing the user's sensitive personal identifying information (PII).
 
 ## Table of Contents
